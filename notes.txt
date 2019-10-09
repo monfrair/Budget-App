@@ -1,0 +1,4 @@
+to get to file need to go 6-budgety/
+then to project folder: Budget-App/
+
+then you will have access to the files through terminal and github
