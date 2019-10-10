@@ -43,7 +43,7 @@ var controller = (function (budgetCtrl, UICtrl) {
 
     document.addEventListener('keypress', function (event) {
         if (event.keyCode === 13 || event.which === 13) {
-            ctrlAddItem();
+            ctrlAddItem(); //need to rewind 1 minute on video to see what/why this is****
         }
     });
 
