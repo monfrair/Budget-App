@@ -18,7 +18,7 @@ var UIController = (function () {
 // Global app controler
 var controller = (function (budgetCtrl, UICtrl) {
 
-    document.querySelector('.add__btn').addEventListener('click', function () {
+    var ctrlAddItem = function () {
 
         // to do list for this function when button is pressed.
 
@@ -32,11 +32,18 @@ var controller = (function (budgetCtrl, UICtrl) {
 
         // 5. display the budget on UI
 
+
+    }
+
+    document.querySelector('.add__btn').addEventListener('click', function () {
+
+
+
     })
 
     document.addEventListener('keypress', function (event) {
         if (event.keyCode === 13 || event.which === 13) {
-            console.log('enter was pressed');
+            ctrlAddItem();
         }
     });
 
