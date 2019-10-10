@@ -2,16 +2,7 @@
 
 var budgetController = (function () {
 
-    var x = 23;
-    var add = function (a) {
-        return x + a;
-    }
-
-    return {
-        publicTest: function (b) {
-            return add(b);
-        }
-    }
+    //some code
 
 
 
@@ -24,18 +15,30 @@ var UIController = (function () {
 
 })();
 
-
+// Global app controler
 var controller = (function (budgetCtrl, UICtrl) {
 
-    //    document.querySelector('.add__btn').addEventListener('click', function () {
-    //        console.log('Button Was clicked');
-    //    })
-    var z = budgetCtrl.publicTest(5);
+    document.querySelector('.add__btn').addEventListener('click', function () {
 
-    return {
-        anotherPublic: function () {
-            console.log(z);
+        // to do list for this function when button is pressed.
+
+        // 1. get field input data from button click
+
+        // 2. add item to budget controler
+
+        // 3. add new item to user interface
+
+        // 4. calculate the budget
+
+        // 5. display the budget on UI
+
+    })
+
+    document.addEventListener('keypress', function (event) {
+        if (event.keyCode === 13 || event.which === 13) {
+            console.log('enter was pressed');
         }
-    }
+    });
+
 
 })(budgetController, UIController);
