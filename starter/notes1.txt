@@ -1,0 +1,3 @@
+Open folders and work from starter folder. If open from main project folder, will have issues with live preview in Brackets. 
+CD in terminal to Budget-App, if CD into previous folders will have Git issues.
+
